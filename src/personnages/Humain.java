@@ -51,9 +51,9 @@ public class Humain {
 	public void acheter(String bien,int prix) {
 		if (prix<=argent) {
 			perdreArgent(prix);
-			parler("J'ai "+ argent + " sous en poche, je vais pouvoir m'acheter un " + bien + " a " + prix +" sous " );
+			parler("J'ai "+ argent + " sous en poche, je vais pouvoir m'acheter  " + bien + " a " + prix +" sous " );
 		} else {
-			parler("Je n'ai plus que " + argent + " sous en poche. Je ne peux meme pas m'offrir un kimono a " + prix + " sous.");
+			parler("Je n'ai plus que " + argent + " sous en poche. Je ne peux meme pas m'offrir " + bien + "a" + prix + " sous.");
 		}
 	}
 	
