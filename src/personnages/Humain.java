@@ -14,9 +14,16 @@ public class Humain {
 		return argent;
 	}
 	
-	
+	public void setArgent(int argent) {
+		this.argent = argent;
+	}
+
 	public String getBoisson() {
 		return boisson;
+	}
+	
+	public void setBoisson(String boisson) {
+		this.boisson = boisson;
 	}
 
 	public Humain(String nom, String boisson, int argent) {
@@ -43,7 +50,7 @@ public class Humain {
 	}
 	
 	public void boire() {
-		String MaChaine = "Mmmm, un bon verre de " + getBoisson() + " GLOUPS !" ;
+		String MaChaine = "Mmmm, un bon verre de " + getBoisson() + "! GLOUPS !" ;
 		parler(MaChaine);
 	}
 	
@@ -58,7 +65,7 @@ public class Humain {
 	}
 	
 	public void gagnerArgent(int gain) {
-		this.argent = gain;
+		this.argent += gain;
 	}
 	public void perdreArgent(int perte) {
 		this.argent -= perte;
